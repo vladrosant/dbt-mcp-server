@@ -1,4 +1,4 @@
-"""dbt-mcp-server — MCP server entrypoint (stdio transport).
+"""dbt-mcp-server: MCP server entrypoint (stdio transport).
 
 stateless by design: every tool call re-reads target/manifest.json (and
 run_results.json where relevant), so answers always reflect the latest

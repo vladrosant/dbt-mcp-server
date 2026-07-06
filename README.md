@@ -23,7 +23,7 @@ pip install dbt-mcp-server
 
 ## hooking it up
 
-claude desktop — add to `claude_desktop_config.json` (settings → developer → edit config):
+claude desktop: add to `claude_desktop_config.json` (settings → developer → edit config):
 
 ```json
 {
@@ -63,7 +63,7 @@ then just ask things like:
 >
 > "summarize test failures since 2026-07-01."
 
-note: the manifest has no true column-level lineage, so `trace_column_lineage` won't match renamed or derived columns — it flags upstream nodes without declared columns so you know where the trail could continue.
+note: the manifest has no true column-level lineage, so `trace_column_lineage` won't match renamed or derived columns; it flags upstream nodes without declared columns so you know where the trail could continue.
 
 ## development
 
