@@ -1,6 +1,6 @@
 # dbt-mcp-server
 
-MCP server that lets claude answer questions about your dbt project — model lineage, missing docs, test failures — straight from `manifest.json`
+mcp server that lets claude answer questions about your dbt project. model lineage, missing docs, test failures — straight from `manifest.json`
 
 stateless by design: every tool call re-reads `target/manifest.json`, so answers always reflect your latest `dbt parse`. core logic is stdlib only, with a single dependency on the official [mcp](https://pypi.org/project/mcp/) SDK. talks over stdio.
 
